@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operand</title>
+    <style>
+        .four {
+            align-items: center;
+            margin: 350px;
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            justify-content: center;
+            padding: 100px;
+            border-style: double;
+        }
+        
+        .name {
+            align-items: center;
+            padding: 20px;
+            margin: 10px;
+        }
+        
+        .button {
+            margin: 10px;
+            height: 30px;
+            width: 50px;
+            align-items: center;
+            text-align: center;
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <div class="four">
+
+
+            <label>value1</label>
+            <input type="number" id="find" class="name"><br>
+            <label>value2</label>
+            <input type="number" id="find1" class="name"><br>
+            <button onclick="getAdd()" class="button">add</button>
+            <button onclick="getSub()" class="button">sub</button>
+            <button onclick="getMul()" class="button">mul</button>
+            <button onclick="getDiv()" class="button">div</button>
+
+
+        </div>
+    </table>
+    <script>
+        function getAdd() {
+            var a = document.getElementById("find").value;
+            var b = document.getElementById("find1").value;
+            var c = parseFloat(a) + parseFloat(b);
+
+            alert("result is:" + c);
+        }
+
+        function getSub() {
+            var a = document.getElementById("find").value;
+            var b = document.getElementById("find1").value;
+            var c = parseFloat(a) - parseFloat(b);
+
+            alert("result is:" + c);
+        }
+
+        function getMul() {
+            var a = document.getElementById("find").value;
+            var b = document.getElementById("find1").value;
+            var c = parseFloat(a) * parseFloat(b);
+
+            alert("result is:" + c);
+        }
+
+        function getDiv() {
+            var a = document.getElementById("find").value;
+            var b = document.getElementById("find1").value;
+            var c = parseFloat(a) / parseFloat(b);
+
+            alert("result is:" + c);
+        }
+    </script>
+
+</body>
+
+</html>
